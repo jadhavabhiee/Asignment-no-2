@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        div{
+            width: 500px;
+            height: 100px;
+            box-shadow: 0 0 10px blue;
+            padding: 20px;
+            margin: 100px auto;
+        }
+    </style>
+    <script>
+        function fnshowHidePass() {
+            if (document.querySelector('#1').type=='password') {
+                
+            document.querySelector('#1').type=='text';
+            document.querySelector('btn').innerText='hide Password';
+
+            }
+           else{
+               document.querySelector('#1').type="password";
+               document.querySelector('btn').innerText="show password";
+
+           }  
+        }
+    </script>
+</head>
+<body>
+  <div>
+      <h2>Show/Hide Password</h2>
+      <label>Enter Text</label>
+      <input type="password" id="i1">
+      <button onclick="fnshowHidePass()" class="btn">show password</button>
+  </div>  
+</body>
+</html>
